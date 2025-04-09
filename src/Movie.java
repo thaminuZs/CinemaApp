@@ -6,7 +6,7 @@ class Movie {
     private String genre;
     private String studio;
     private String language;
-    private String runtime;
+    private int runtime;
     private double rating;
     private List<String> directorList;
     private List<String> castList;
@@ -35,12 +35,53 @@ class Movie {
         this.runtime = runtime;
     }
 
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
     public void setDirectors(List<String> directorList) {
         this.directorList = directorList; 
     }
 
     public void setCast(List<String> castList) {
         this.castList = castList;
+    }
+
+
+    public long getMovieId() {
+        return movieId;
+    }
+
+    public String getMovieName() {
+        return movieName;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public String getStudio() {
+        return studio;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public int getRuntime() {
+        return runtime;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public List<String> getDirctors() {
+        return directorList;
+    }
+
+    public List<String> getCast() {
+        return castList;
     }
 
 }
